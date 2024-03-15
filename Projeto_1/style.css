@@ -1,0 +1,96 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+}
+  
+body {
+    background-color: var(--eggshell);
+    padding: 50px 30%;
+}
+
+img{
+    width: 100%;
+    border-radius: 32px;
+    object-fit: cover;
+}
+
+h1{
+    font-family: Young Serif;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+.container{
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 32px;
+    width: 100%;
+    margin-left: -40px;
+}
+
+.preparation_wrapper{
+    padding: 15px 25px;
+    background-color: var(--rose-white);
+    height: 100%;
+    border-radius: 23px;
+    font-family: Outfit;
+}
+
+
+.preparation_wrapper > p:first-child{
+    color: var(--dark-raspberry);
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+}
+
+.instructions h2, .ingredientss h2{
+    color: var(--dark-raspberry);
+    font-family: Young Serif;
+    font-weight: 400;
+}
+
+.instructions ol, .ingredientss ul{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.instructions, .ingredientss, .nutrition{
+    font-family: Outfit;
+}
+
+.nutrition ul{
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.nutrition li{
+    display: flex;
+    margin: 25px 0;
+    position: relative;
+}
+
+.nutrition li:not(:last-child):before{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #c3c3c3;
+    bottom: -14.5px;
+    content: '';
+}
+
+.nutrition li > div{
+    width: 50%;
+
+}

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+header, footer {
+    background-color: #192a56;
+    padding: 16px 0;
+    color: white;
+    padding-bottom: 0;
+}
+
+header > .container, footer > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+    background-color: #575fcf;
+    padding: 16px 0;
+    display: none;
+
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav li a{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu{
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu span{
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+section {
+    padding: 48px 0;
+}
+
+.about img{
+    width: 400px;
+    margin-right: 24px;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+.lista-veiculos { 
+    flex-wrap: wrap;
+}
+
+
+.lista-veiculos li{
+    list-style: none;
+    max-width: 30%;
+}
+
+button {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.lista-veiculos li strong {
+    margin: 16px 0;
+    display: block;
+    font-size: 24px;
+}
+
+.lista-veiculos img {
+    max-width: 100%;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+    margin-bottom: 24px;
+}
+
+.contato form > div {
+    margin-bottom: 16px;
+}
+
+.contato form > div > label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contato form > div > input, .contato form > div > textarea {
+    width: 100%;
+    display: blocks;
+    padding: 8px;
+}
+
+.contato form > div > textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contato form {
+    max-width: 400px;
+}
+
+form button{
+    max-width: 230px;
+}
+
+footer ul {
+    list-style: none;
+    gap: 15px;
+}
+
+footer img {
+    width: 32px;
+    padding-bottom: 8px;
+}
